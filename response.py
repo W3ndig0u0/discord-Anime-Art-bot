@@ -8,4 +8,4 @@ def handle_response(message):
         return "This is a help message"
 
     # Default response for other cases
-    return "What????"
+    return "What???? LMAO WTF 😭😭😭"

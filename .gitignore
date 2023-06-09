@@ -210,6 +210,10 @@ PublishScripts/
 csx/
 *.build.csdef
 
+/models--JingAnimeV2
+/img
+/models--stabilityai--sd--vae--ft--mse
+/myenv
 # Microsoft Azure Emulator
 ecf/
 rcf/

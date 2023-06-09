@@ -1,8 +1,8 @@
-import discord
 import response
 from PIL import Image
 import io
 from art import AnimeArtist
+import discord
 
 
 async def send_message(message, user_message, is_private):
@@ -74,10 +74,10 @@ def run_discord():
                 anime_artist = AnimeArtist()
                 height = 512
                 width = 512
-                num_inference_steps = 100
+                num_inference_steps = 80
                 eta = 0.1
-                negative_prompt = "sketch, duplicate, ugly, huge eyes, text, logo, monochrome, worst face form, worst qualirt, bad autonomy "
-                guidance_scale = 6
+                negative_prompt = "Worst quality, bad quality, sketch, duplicate, ugly, huge eyes, text, logo, monochrome, worst face, (bad and mutated hands:1.4), (worst quality:2.0), (low quality:2.0), (blurry:2.0), horror, geometry, bad_prompt, (bad hands), (missing fingers), multiple limbs, bad anatomy, (interlocked fingers:1.3), Ugly Fingers, (extra digit and hands and fingers and legs and arms:1.4), ((2girl)), (deformed fingers:1.3), (long fingers:1.2),(bad-artist-anime), bad-artist, bad hand, extra legs, (worst quality, low quality:2), NSFW,monochrome, zombie,overexposure, watermark,text,bad anatomy,bad hand,((extra hands)),extra fingers,too many fingers,fused fingers,bad arm,distorted arm,extra arms,fused arms,extra legs,missing leg,disembodied leg,extra nipples, detached arm, liquid hand,inverted hand,disembodied limb, oversized head,extra body,extra navel,easynegative,(hair between eyes),sketch, duplicate, ugly, huge eyes, text, logo, worst face, (bad and mutated hands:1.3), (blurry:2.0), horror, geometry, bad_prompt, (bad hands), (missing fingers), multiple limbs, bad anatomy, (interlocked fingers:1.2), Ugly Fingers, (extra digit and hands and fingers and legs and arms:1.4), (deformed fingers:1.2), (too many fingers:1.3),(bad-artist-anime), bad-artist, bad hand, extra legs ,(ng_deepnegative_v1_75t),((hands on head)) ((deformed legs:1.3)) (black background:1.3) (empty background:1.2) (mutaded or blub fingers:1.4), (bad autonomy:1.2) (Worst Quality, Low Quality:1.4), (Poorly Made Bad 3D, Lousy Bad Realistic:1.1), bad mouth form, ((too many fingers:1.1)), too few fingers, bad legs autonomy, (bad hand structure:1.1), ((weird fingers:1.2)), bad thumb, (long fingers:1.3), (glasses:1.2) ((Bad eye form)) (holding anything:1.2), nsfw, lewd, sex, hot, sexy, hentai, nude, ugly smile, bad eyes form, tiny eyes, huge eyes, diffrrent eyes, diffrent eyeslenses, text, watermark, mutated hands, small fingers, long fingers, to many fingers, to few fingers, ugly feets, ugly eyes, tiny eyes, to large eyes, bad eyes form, bad eyes structure"
+                guidance_scale = 9
                 seed = -1
                 batch_size = 1
                 art_model_id = "JingAnimeV2"

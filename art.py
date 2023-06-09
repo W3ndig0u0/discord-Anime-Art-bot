@@ -3,9 +3,7 @@ from PIL import Image
 import os
 import time
 import math
-import random
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, CLIPTextConfig
 from diffusers import StableDiffusionPipeline
 from diffusers.models import AutoencoderKL
 
@@ -79,8 +77,8 @@ class AnimeArtist:
             torch.mps.empty_cache()
         elif torch.cuda.is_available():
             torch.cuda.empty_cache()
-            self.generator.enable_model_cpu_offload()
 
+        self.generator.enable_model_cpu_offload()
         self.generator.enable_attention_slicing()
 
         with torch.no_grad():
@@ -156,24 +154,6 @@ def load_modelDiff(model_name, vae_name, cache_dir, device):
     vae = AutoencoderKL.from_pretrained(
         vae_name, torch_dtype=torch.float16, cache_dir=var_cache_dir
     )
-
-    print("Using " + model_name + " NOW!")
-    if model_name.endswith(".safetensors") or model_name.endswith(".ckpt"):
-        model = StableDiffusionPipeline.from_ckpt(
-            model_name,
-            cache_dir=safe_cache_dir,
-            torch_dtype=torch.float16,
-            vae=vae,
-            local_files_only=True,
-        )
-    else:
-        model = StableDiffusionPipeline.from_pretrained(
-            model_name,
-            cache_dir=safe_cache_dir,
-            torch_dtype=torch.float16,
-            vae=vae,
-            local_files_only=True,
-        )
 
     print("Using " + model_name + " NOW!")
     model = StableDiffusionPipeline.from_pretrained(

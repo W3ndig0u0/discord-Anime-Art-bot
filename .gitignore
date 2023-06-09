@@ -396,3 +396,25 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+*.safetensors
+models--stabilityai--sd-vae-ft-mse/snapshots/31f26fdeee1355a5c34592e401dd41e45d25a493/config.json
+models--stabilityai--sd-vae-ft-mse/refs/main
+models--stabilityai--sd-vae-ft-mse/blobs/a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815
+models--stabilityai--sd-vae-ft-mse/blobs/0db26717579be63eb0ddbf15b43faa43700dfe5a
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/vae/diffusion_pytorch_model.bin
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/vae/config.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/unet/diffusion_pytorch_model.bin
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/unet/config.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/tokenizer/vocab.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/tokenizer/tokenizer_config.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/tokenizer/special_tokens_map.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/tokenizer/merges.txt
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/text_encoder/pytorch_model.bin
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/text_encoder/config.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/scheduler/scheduler_config.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/safety_checker/pytorch_model.bin
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/safety_checker/config.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/model_index.json
+models--JingAnimeV2/snapshots/9a62d6f236829197d4aa9f314c7e488cbe3531d1/feature_extractor/preprocessor_config.json
+models--JingAnimeV2/.DS_Store
+models--JingAnimeV2/refs/main

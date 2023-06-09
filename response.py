@@ -1,10 +1,11 @@
-def handle_response(message) -> str:
+def handle_response(message):
     p_message = message.lower()
 
     if p_message == "hi":
         return "Hello!"
 
-    if p_message == "?help":
+    if p_message == "!help":
         return "This is a help message"
 
-    return "I'm sorry, I didn't understand your message."
+    # Default response for other cases
+    return "What????"

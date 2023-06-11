@@ -64,7 +64,7 @@ class AnimeArtist:
         if initial_generation or self.generator is None:
             self.progress = 0
 
-        self.load_generator(model_name, vae_name, cache_dir)
+        self.generator = load_modelDiff(model_name, vae_name, cache_dir, self.device)
 
         self.total_steps = batch_size
         self.generation_complete = False
@@ -151,6 +151,7 @@ class AnimeArtist:
 def load_modelDiff(model_name, vae_name, cache_dir, device):
     var_cache_dir = os.path.join("./")
     safe_cache_dir = os.path.join("./")
+
     vae = AutoencoderKL.from_pretrained(
         vae_name, torch_dtype=torch.float16, cache_dir=var_cache_dir
     )

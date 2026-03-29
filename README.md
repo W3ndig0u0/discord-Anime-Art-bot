@@ -22,10 +22,3 @@ A dedicated Discord bot designed for anime enthusiasts and art collectors. This 
 *   A Discord Bot Token from the [Discord Developer Portal](https://discord.com/developers/applications).
 *   Java 17+ or Node.js 18+ (depending on your final build choice).
 *   A running PostgreSQL instance.
-
-### Installation
-
-1. **Clone the repo**:
-   ```bash
-   git clone https://github.com
-   cd discord-Anime-Art-bot
